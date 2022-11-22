@@ -8,7 +8,7 @@ const myApp = angular.module("boilerplateApp", ["ui.router"]);
 /*
     Após isso é feita a configuração da aplicação,
     nesse caso, estamos definindo como se comportará o estado da aplicação
-    com base na url ao qual á identificada.
+    com base na url ao qual é identificada.
 */
 
 myApp.config(function($stateProvider) {

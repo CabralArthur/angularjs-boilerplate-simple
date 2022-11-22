@@ -4,7 +4,11 @@
         <h4 class="mt-4">{{ welcomeInfo.subtitle }}</h4>
     </div>
 
-    <h4 class="mt-4">{{ loading ? 'Carregando...' : 'Tabela prontinha!' }}</h4>
+    <div class="mt-4" ng-if="loading">
+        <img src="../src/image/loading-amigo.gif" alt="Loading Amigo" style="width: 100px;">
+    </div>
+
+    <h4 class="mt-4" ng-if="!loading">Tabela prontinha!</h4>
 
     <table class="table table-dark mt-4" ng-if="!loading">
         <thead>

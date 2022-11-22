@@ -9,6 +9,8 @@ myApp.controller("TableExampleCtrl", ['$scope', '$timeout', 'TableExampleService
 
         TableExampleService.getData().then(response => {
             $scope.usersTable = response.data;
+        }).catch(error => {
+            alert('Deu ruim', error);
         }).finally(() => {
             $timeout(() => {
                 $scope.loading = false;
