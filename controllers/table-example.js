@@ -1,4 +1,4 @@
-myApp.controller("tableExampleCtrl", ['$scope', '$timeout', 'TableExampleService', function ($scope, $timeout, TableExampleService) {
+myApp.controller("TableExampleCtrl", ['$scope', '$timeout', 'TableExampleService', function ($scope, $timeout, TableExampleService) {
     $scope.welcomeInfo = {
         title: 'Olha só, estamos em outra tela agora, e nem foi necessário fazer o reload, que massa, não?',
         subtitle: 'Espero que você compreenda o que eu faço aqui...',

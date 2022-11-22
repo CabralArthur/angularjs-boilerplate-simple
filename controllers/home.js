@@ -1,4 +1,4 @@
-myApp.controller("homeCtrl", ['$scope', function ($scope) {
+myApp.controller("HomeCtrl", ['$scope', function ($scope) {
     $scope.welcomeInfo = {
         title: 'Olá, full, tudo bem?',
         subtitle: 'Agora que você conseguiu me acessar, sugiro que veja como funciona o passo a passo...',

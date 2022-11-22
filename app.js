@@ -16,13 +16,13 @@ myApp.config(function($stateProvider) {
         name: "home", //Quando esse estado estiver ativo
         url: "", //Essa url estará ativa...
         templateUrl: "views/home.html", // Esse html será renderizado
-        controller: "homeCtrl" // Utilizando esse controller
+        controller: "HomeCtrl" // Utilizando esse controller
     });
 
     $stateProvider.state({
         name: "table-example", //Quando esse estado estiver ativo
-        url: "", //Essa url estará ativa...
+        url: "/example", //Essa url estará ativa...
         templateUrl: "views/table-example.html", // Esse html será renderizado
-        controller: "tableExampleCtrl" // Utilizando esse controller
+        controller: "TableExampleCtrl" // Utilizando esse controller
     });
 });
