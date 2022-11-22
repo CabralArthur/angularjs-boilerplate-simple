@@ -1,0 +1,29 @@
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+    <div class="row text-center d-flex align-items-center" ng-if="loading">
+        <h3>{{ welcomeInfo.title }}</h3>
+        <h4 class="mt-4">{{ welcomeInfo.subtitle }}</h4>
+    </div>
+
+    <h4 class="mt-4">{{ loading ? 'Carregando...' : 'Tabela prontinha!' }}</h4>
+
+    <table class="table table-dark mt-4" ng-if="!loading">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Nome De Usuário</th>
+            <th scope="col">Email</th>
+            <th scope="col">Rua</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="user in usersTable">
+            <th scope="row">{{ user.id }}</th>
+            <th>{{ user.name }}</th>
+            <th>{{ user.username }}</th>
+            <th>{{ user.email }}</th>
+            <th>{{ user.address.street }}</th>
+          </tr>
+        </tbody>
+    </table>
+</div>

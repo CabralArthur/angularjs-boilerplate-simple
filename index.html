@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="boilerplateApp">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boilerplate Example</title>
+
+        <!-- Importação do bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <!-- Importação do angular e do angular router (Gerenciador de rotas do angular) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+        <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+        <!-- 
+            O arquivo app.js irá fazer o controle de estado da aplicação
+            utilizando o $stateProvider, nele teremos todos os estados com seus
+            respectivos html's que serão renderizados.
+        -->
+        <script src="./app.js"></script>
+
+
+        <ui-view></ui-view>
+
+        <!--
+            Services são geralmente utilizados para executar funções em diferentes controllers/
+            No nosso caso, geralmente utilizaremos para fazermos conexões com as nossas API's.
+        -->
+        <script src="./services/table-example.js"></script>
+
+        <!--
+            Controllers são criados para que seja possível ter o controle das variáveis do angular
+            no escopo de uma tela / modal específico. Nesse caso, criamos o controller do index
+            (inicial, que engloba nossa aplicação) e um controller de exemplo, que armazenará
+            algumas variáveis e renderizará as informações no html.
+        -->
+        <script src="./controllers/home.js"></script>
+        <script src="./controllers/table-example.js"></script>
+    </body>
+</html>
